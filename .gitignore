@@ -218,3 +218,48 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+
+# --- Project-specific additions ---
+
+# Secrets (template only covers plain .env)
+.env.*
+*.key
+*.pem
+secrets.*
+
+# Audio (user voices = personal data, plus large files)
+*.wav
+*.mp3
+*.m4a
+*.ogg
+*.opus
+*.flac
+*.aac
+*.webm
+
+# Model weights and checkpoints
+*.pt
+*.pth
+*.bin
+*.onnx
+*.safetensors
+*.gguf
+*.ckpt
+*.h5
+*.pkl
+
+# Vector stores and indexes
+*.faiss
+*.index
+chroma/
+.chroma/
+*.sqlite3
+
+# Raw / personal data
+data/raw/
+data/private/
+
+# OS junk
+.DS_Store
+Thumbs.db
